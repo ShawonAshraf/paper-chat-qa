@@ -41,4 +41,4 @@ testem.log
 # System Files
 Thumbs.db
 
-.nx/cache
+.nx/
