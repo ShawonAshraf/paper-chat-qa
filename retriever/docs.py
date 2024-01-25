@@ -16,7 +16,7 @@ def create_chunks(document):
     return chunked_docs
 
 
-def load_document_embeddings(chunked_docs, persist_path: None):
+def load_document_embeddings(chunked_docs, persist_path=None):
     embeddings = OllamaEmbeddings()
     db = chroma.Chroma(persist_directory=persist_path)
     vectors = db.from_documents(chunked_docs, embeddings)
