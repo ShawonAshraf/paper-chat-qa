@@ -1,6 +1,6 @@
 from typing import Annotated
 from fastapi import FastAPI, File, UploadFile
-
+from fastapi.middleware.cors import CORSMiddleware
 
 from docs import create_chunks, load_document_embeddings
 from chains import get_retrieval_chain
@@ -12,6 +12,7 @@ from tempfile import NamedTemporaryFile
 
 from datamodel import QueryString
 
+
 # app properties
 app = FastAPI()
 # properties for retrieval
@@ -19,6 +20,19 @@ app.vector_store = None  # type: ignore
 app.chain = None  # type: ignore
 app.llm = init_llama2()  # type: ignore
 app.prompt = prepare_template()  # type: ignore
+
+origins = [
+    "http://localhost",
+    "http://localhost:4200",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 
 # routes
