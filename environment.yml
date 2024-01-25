@@ -44,7 +44,6 @@ dependencies:
       - coloredlogs==15.0.1
       - dataclasses-json==0.6.3
       - deprecated==1.2.14
-      - faiss-cpu==1.7.4
       - fastapi==0.109.0
       - filelock==3.13.1
       - flatbuffers==23.5.26
