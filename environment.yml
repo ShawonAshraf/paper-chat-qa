@@ -97,6 +97,7 @@ dependencies:
       - pycodestyle==2.11.1
       - pydantic==2.5.3
       - pydantic-core==2.14.6
+      - pypdf==4.0.0
       - pypika==0.48.9
       - pyproject-hooks==1.0.0
       - python-dateutil==2.8.2
