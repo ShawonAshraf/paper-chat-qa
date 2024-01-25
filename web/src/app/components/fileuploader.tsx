@@ -1,6 +1,6 @@
 // https://www.bezkoder.com/react-typescript-file-upload/
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import UploadService from "../utils/requests";
 
 const FileUpload: React.FC = () => {
