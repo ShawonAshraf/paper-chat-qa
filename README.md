@@ -35,7 +35,19 @@ For detailed API docs, check `http://0.0.0.0:8000/docs`.
 
 
 ## env setup
+
+#### conda
+
 ```bash
 cd retriever
 conda env create -f environment.yml
+```
+
+#### venv
+
+```bash
+cd retriever
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
 ```
