@@ -68,6 +68,7 @@ dependencies:
       - langchain-community==0.0.15
       - langchain-core==0.1.15
       - langsmith==0.0.83
+      - loguru==0.7.2
       - marshmallow==3.20.2
       - mmh3==4.1.0
       - monotonic==1.6
