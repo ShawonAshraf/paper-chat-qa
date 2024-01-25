@@ -20,8 +20,17 @@ const upload = (file: File, onUploadProgress: any): Promise<any> => {
     });
 };
 
-const FileUploadService = {
-    upload,
+const sendQuery = (query: string): Promise<Any> => {
+    return http.post("/query", query, {
+        headers: {
+            "Content-Type": "text/json",
+        },
+    });
 };
 
-export default FileUploadService;
+const HttpRequestService = {
+    upload,
+    sendQuery
+};
+
+export default HttpRequestService;

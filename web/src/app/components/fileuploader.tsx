@@ -1,7 +1,7 @@
 // https://www.bezkoder.com/react-typescript-file-upload/
 
 import { useState } from "react";
-import UploadService from "../utils/requests";
+import HttpRequestService from "../utils/requests";
 
 const FileUpload: React.FC = () => {
     const [currentFile, setCurrentFile] = useState<File>();
@@ -19,7 +19,7 @@ const FileUpload: React.FC = () => {
         setProgress(0);
         if (!currentFile) return;
 
-        UploadService.upload(currentFile, (event: any) => {
+        HttpRequestService.upload(currentFile, (event: any) => {
             setProgress(Math.round((100 * event.loaded) / event.total));
         })
             .then((response) => {
