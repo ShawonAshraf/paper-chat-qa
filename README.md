@@ -2,6 +2,8 @@
 
 Summarises and queries research papers using Retrieval Augmented Generation using LLAMA2. 
 
+![a screenshot of the web ui](snapshot.png)
+
 ## retriever module
 
 - Language Model: Llama2
