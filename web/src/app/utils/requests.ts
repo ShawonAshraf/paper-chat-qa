@@ -20,7 +20,7 @@ const upload = (file: File, onUploadProgress: any): Promise<any> => {
     });
 };
 
-const sendQuery = (query: string): Promise<Any> => {
+const sendQuery = (query: string): Promise<any> => {
     const queryObj = {
         "query": query
     };

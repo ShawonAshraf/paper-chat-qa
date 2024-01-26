@@ -25,9 +25,6 @@ const FileUpload: React.FC = () => {
             .then((response) => {
                 setMessage(response.data.message);
             })
-            .then((files) => {
-                setFileInfos(files.data);
-            })
             .catch((err) => {
                 setProgress(0);
 

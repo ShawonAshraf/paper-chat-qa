@@ -7,7 +7,7 @@ const QueryFrame: React.FC = () => {
 
     // handle changes in the query text area
     // https://bobbyhadz.com/blog/react-get-textarea-value
-    const handleTextAreaChanges = (event: Event) => {
+    const handleTextAreaChanges = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
         setCurrentQuery(event.target?.value);
     };
 
@@ -43,7 +43,7 @@ const QueryFrame: React.FC = () => {
                     <textarea
                         className="form-control"
                         id="queryTextArea"
-                        rows="5"
+                        rows={5}
                         onChange={handleTextAreaChanges}
                     ></textarea>
                 </div>
