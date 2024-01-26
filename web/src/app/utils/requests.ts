@@ -21,9 +21,14 @@ const upload = (file: File, onUploadProgress: any): Promise<any> => {
 };
 
 const sendQuery = (query: string): Promise<Any> => {
-    return http.post("/query", query, {
+    const queryObj = {
+        "query": query
+    };
+
+
+    return http.post("/query", queryObj, {
         headers: {
-            "Content-Type": "text/json",
+            "Content-Type": "application/json",
         },
     });
 };
