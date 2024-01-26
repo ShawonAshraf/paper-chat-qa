@@ -19,7 +19,7 @@ python -f file_path -pdir persist_dir
 
 The cli provides a shell to run queries via langchain. Type `/exit` to quit the shell.
 
-### REST API
+## REST api
 
 ```bash
 uvicorn api:app --host 0.0.0.0 --port 8000
@@ -51,3 +51,13 @@ python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
+
+## web frontend
+
+```bash
+cd web
+npm install
+npm run start
+```
+
+The web frontend runs on port 4200 by default.
