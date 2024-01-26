@@ -57,7 +57,8 @@ Due to image definition, the ollama container does not recognise the `ollama` co
 
 ```bash
 chmod +x scripts/pull_llama2.sh
-./pull_llama2.sh &;
+./scripts/pull_llama2.sh
+# this will take a while depending on your internet connection
 ```
 
 Once up and running, you can access the web service as usual at `http://localhost:4200`. The REST api can be accessed at `http://localhost:8000`. If you wish to change these port numbers, edit the `docker-compose.yml` file accordingly.
