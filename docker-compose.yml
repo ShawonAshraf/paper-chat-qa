@@ -4,11 +4,15 @@ services:
     image: ollama/ollama:latest
     ports:
       - "11434:11434"
-    environment:
-      - "runtime=nvidia"
-      - "gpus=all"
     volumes:
       - ollama:/root/.ollama
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
   api:
     build: ./retriever/
     ports:
