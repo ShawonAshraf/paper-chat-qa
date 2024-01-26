@@ -3,7 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import FileUploader from "./components/fileuploader";
 import QueryFrame from "./components/query";
 
-
 export function App() {
     return (
         <div className="container" style={{ width: "800px" }}>
