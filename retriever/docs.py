@@ -1,3 +1,5 @@
+import os
+
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_community.embeddings import OllamaEmbeddings
 from langchain.text_splitter import CharacterTextSplitter
@@ -17,7 +19,9 @@ def create_chunks(document):
 
 
 def load_document_embeddings(chunked_docs, persist_path=None):
-    embeddings = OllamaEmbeddings()
+    # a workaround hack to get things running in containers
+    base_url = os.environ.get("OLLAMA_BASE_URL", "http://localhost:11434")
+    embeddings = OllamaEmbeddings(base_url=base_url)
     db = chroma.Chroma(persist_directory=persist_path)
     vectors = db.from_documents(chunked_docs, embeddings)
 
