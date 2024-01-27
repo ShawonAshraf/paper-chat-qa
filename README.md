@@ -47,6 +47,8 @@ The web frontend runs on `http://localhost:4200`.
 
 ## Docker
 
+*URLs are hardcoded in Langchain, as a result, the chains don't run inside a container, working on a fix*
+
 ```bash
 sudo docker compose up
 # or, docker compose up
