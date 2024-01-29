@@ -32,7 +32,7 @@ uvicorn api:app --host 0.0.0.0 --port 8000
 #### Endpoints
 
 - `/` : root
-- `/upload` : upload file as multipart PUT request
+- `/upload` : upload file as multipart POST request
 - `/query`: send query as json, POST
 
 For detailed API docs, check `http://0.0.0.0:8000/docs`.
