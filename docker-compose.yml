@@ -24,6 +24,8 @@ services:
       - ollama
   web:
     build: ./web/
+    environment:
+      - API_URL=http://api:8000
     ports:
       - "4200:4200"
     depends_on:

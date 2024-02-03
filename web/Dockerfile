@@ -3,8 +3,8 @@ FROM node:20-bullseye
 WORKDIR /app
 COPY . .
 RUN npm install
+ENV API_URL=http://localhost:8000
 EXPOSE 4200
-RUN npm install
 # RUN npm install -g http-server
 RUN npm run build --omit=dev
 
