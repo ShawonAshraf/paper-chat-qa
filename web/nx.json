@@ -2,7 +2,7 @@
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "targetDefaults": {
     "build": {
-      "cache": true,
+      "cache": false,
       "dependsOn": ["^build"],
       "inputs": ["production", "^production"]
     },
@@ -56,5 +56,5 @@
     }
   },
   "defaultProject": "web",
-  "nxCloudAccessToken": "MzU4YjcxZDEtMGNlNC00NzJlLTlhMTMtNTkxNjZlOWUwODlmfHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": ""
 }
