@@ -65,7 +65,7 @@ chmod +x scripts/pull_llama2.sh
 # this will take a while depending on your internet connection
 ```
 
-Once up and running, you can access the web service as usual at `http://localhost:4200`. The REST api can be accessed at `http://localhost:8000`. If you wish to change these port numbers, edit the `docker-compose.yml` file accordingly.
+Once up and running, you can access the web service as usual at `http://localhost:4200`. The REST api can be accessed at `http://localhost:9000`. If you wish to change these port numbers, edit the `docker-compose.yml` file accordingly.
 
 
 ## env setup
@@ -87,3 +87,8 @@ pip install -r requirements.txt
 ```
 
 
+
+### TODO
+- [ ] Keep a history of documents in the vector database
+- [ ] Show error message in the web ui instead of File has been uploaded
+- [ ] A progress bar while embeddings are being loaded, it works fast on GPUs but for CPUs, takes a while
