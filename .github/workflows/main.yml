@@ -7,6 +7,8 @@ jobs:
         steps:
             - name: Checkout
               uses: actions/checkout@v3
-            - name: Docker Compose Build
-              run: docker compose build
+            - name: Docker Compose Build for CPU
+              run: docker compose -f docker-compose-cpu.yml build
+            - name: Docker Compose Build for GPU
+              run: docker compose -f docker-compose-gpu.yml build
             
