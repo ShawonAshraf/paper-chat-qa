@@ -92,3 +92,4 @@ pip install -r requirements.txt
 - [ ] Keep a history of documents in the vector database
 - [ ] Show error message in the web ui instead of File has been uploaded
 - [ ] A progress bar while embeddings are being loaded, it works fast on GPUs but for CPUs, takes a while
+- [ ] Pass API url to web as an ENV var. Currently it's hard coded.
