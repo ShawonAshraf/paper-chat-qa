@@ -13,6 +13,7 @@ llama-index = "^0.10.43"
 gradio = "^4.36.0"
 qdrant-client = "^1.9.1"
 openai = "^1.31.2"
+loguru = "^0.7.2"
 
 
 [tool.poetry.group.dev.dependencies]
