@@ -1,8 +1,8 @@
-# paper-summariser
+# paper-chat-qa
 
 ![build status](https://github.com/ShawonAshraf/paper-summariser/actions/workflows/main.yml/badge.svg)
 
-Summarises and queries research papers using Retrieval Augmented Generation using LLAMA2. 
+Summarises and answers queries on research papers using Retrieval Augmented Generation using LLAMA2. 
 
 ![a screenshot of the web ui](snapshot.png)
 
