@@ -15,5 +15,3 @@ pool:
 steps:
 - script: docker compose -f docker-compose-cpu.yml build
   displayName: 'Docker Compose Build - CPU'
-- script: docker compose -f docker-compose-gpu.yml build
-  displayName: 'Docker Compose Build - GPU'
