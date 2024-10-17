@@ -1,0 +1,19 @@
+trigger:
+- main
+
+resources:
+- repo: self
+
+pr:
+  branches:
+    include:
+    - main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: docker compose -f docker-compose-cpu.yml build
+  displayName: 'Docker Compose Build - CPU'
+- script: docker compose -f docker-compose-gpu.yml build
+  displayName: 'Docker Compose Build - GPU'
