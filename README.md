@@ -1,6 +1,6 @@
 # paper-chat-qa
 
-![build status](https://github.com/ShawonAshraf/paper-summariser/actions/workflows/main.yml/badge.svg)
+[![Build Status](https://shawonashraf.visualstudio.com/paper-qa/_apis/build/status%2FShawonAshraf.paper-chat-qa?branchName=main)](https://shawonashraf.visualstudio.com/paper-qa/_build/latest?definitionId=14&branchName=main)
 
 Summarises and answers queries on research papers using Retrieval Augmented Generation using LLAMA2. 
 
